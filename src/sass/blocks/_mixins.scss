@@ -1,0 +1,24 @@
+@mixin select($width: 100%) {
+  position: relative;
+  width: $width;
+  padding: 12px 15px;
+  border: 1px solid #55657E;
+  background-color: #161F2C;
+  border-radius: 10px;
+  color: #FFFFFF;
+  outline: none;
+  cursor: pointer;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 30px;
+    background: rgba(85, 101, 126, 0.25);
+    background-image: url("../images/main-Dividents-pool/arrowDown.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

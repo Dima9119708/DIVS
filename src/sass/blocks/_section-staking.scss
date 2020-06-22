@@ -1,0 +1,305 @@
+.s-staking {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 140px;
+
+  &::before {
+    content: 'STAKING';
+    font-family: 'GothamPro-Black';
+    position: absolute;
+    top: -70px;
+    left: 0;
+    z-index: -1;
+    font-size: 55px;
+    color: #161e29;
+    text-transform: uppercase;
+
+    //Планшет
+    @media(min-width: 768px) {
+      top: -55px;
+      content: 'xXXFURY STAKING';
+      font-size: 60px;
+    }
+
+    //ПК
+    @media(min-width: 1280px) {
+      top: -90px;
+      font-size: 99px;
+    }
+  }
+
+  //Планшет
+  @media(min-width: 768px) {
+    margin-bottom: 100px;
+  }
+
+  //ПК
+  @media(min-width: 1280px) {
+    margin-bottom: 160px;
+  }
+  
+}
+
+.s-staking-xxx-tokkens {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  font-size: 13px;
+  color: #55657E;
+
+  & span {
+    color: #FFFFFF;
+  }
+
+  //Планшет
+  @media(min-width: 768px) {
+    top: -28px;
+    font-size: 18px;
+  }
+
+  //ПК
+  @media(min-width: 1280px) {
+    top: -37px;
+    font-size: 20px;
+  }
+}
+
+.s-staking-block {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: #161F2C;
+  border-radius: 20px;
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+
+    &::before {
+      background-image: url("../images/main-xXXFURY-STAKING/XXX Token 1.png");
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 35px;
+    left: -20px;
+    z-index: 5;
+    height: 103px;
+    width: 81px;
+    background-image: url("../images/main-xXXFURY-STAKING/XXX Token 8.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    //Планшет
+    @media(min-width: 768px) {
+      top: 50%;
+      left: 10%;
+      height: 120px;
+      width: 100px;
+    }
+
+    //ПК
+    @media(min-width: 1280px) {
+      left: -54px;
+      transform: translateY(-50%);
+      height: 180px;
+      width: 150px;
+    }
+  }
+
+  //ПК
+  @media(min-width: 1280px) {
+    padding: 30px 0;
+    padding-left: 50px;
+    padding-right: 30px;
+  }
+}
+
+.s-staking-blockMini {
+  position: relative;
+  padding: 20px 20px;
+  background: #1B2233;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  width: 100%;
+
+  &:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 200px;
+    width: 160px;
+    background-image: url("../images/main-Dividents-pool/енот_главный\ экран-Маленькая.png");
+
+    //Планшет
+    @media(min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &:first-child {
+    padding-left: 45px;
+    padding-right: 10px;
+    //Планшет
+    @media(min-width: 768px) {
+      padding-left: 20px;
+    }
+
+    //ПК
+    @media(min-width: 1280px) {
+      padding-right: 10px;
+      padding-left: 50px;
+    }
+  }
+
+  &:last-child {
+    height: 200px;
+    width: 100%;
+    background-image: url("../images/main-xXXFURY-STAKING/график.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 0;
+
+    @media(min-width: 768px) {
+      width: 209px;
+    }
+  }
+
+  //Планшет
+  @media(min-width: 768px) {
+    padding: 20px 20px;
+    margin-bottom: 0;
+    width: 33%;
+  }
+
+  //ПК
+  @media(min-width: 1280px) {
+    padding: 30px 30px;
+    width: 32%;
+
+    &:nth-child(2) {
+      width: 40%;
+    }
+  }
+  
+}
+
+.s-staking-blockMini__title {
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+
+  //ПК
+  @media(min-width: 1280px) {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.s-staking-blockMini__titleMB {
+  margin-bottom: 0;
+}
+
+.s-staking-blockMini__price {
+  font-family: 'Roboto-Bold';
+  font-size: 25px;
+  margin-bottom: 5px;
+
+  //ПК
+  @media(min-width: 1280px) {
+    font-size: 30px;
+  }
+
+}
+
+.s-staking-blockMini__value {
+  font-size: 15px;
+  color: #55657E;
+
+  //Планшет
+  @media(min-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+.s-staking-blockMini-mb {
+  margin-bottom: 20px;
+}
+
+.s-staking-blockMini__table {
+  font-family: 'Roboto-Bold';
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px 30px;
+  font-size: 15px;
+
+  & img {
+    margin-right: 15px;
+  }
+
+  & span {
+    color: #55657e;
+  }
+
+  
+  //Планшет
+  @media(min-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+
+  //ПК
+  @media(min-width: 1280px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.s-dividentsPool-Profit__select-width {
+  width: 45%;
+
+  @media(min-width: 768px) {
+    width: 60%;
+  }
+
+  //ПК
+  @media(min-width: 1280px) {
+    width: 35%;
+  }
+}
+
+.s-staking-blockMini-month {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+
+  & span {
+    position: relative;
+    margin-left: 10px;
+    padding: 0 8px; 
+    background: #55657E;
+    border-radius: 50%;
+    text-transform: lowercase; 
+
+    & img {
+      position: relative;
+      top:50%;
+      left: 0;
+      transform: translateY(-50%) scale(1.2);
+    }
+  }
+}
+
+.s-staking-blockMini-procent {
+  font-family: 'Roboto-Bold';
+  font-size: 30px;
+  color: #FED700;
+}

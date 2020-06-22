@@ -1,0 +1,218 @@
+.s-dashboard-totalPaid {
+  padding: 20px 20px;
+  background: #161F2C;
+  border-radius: 20px;
+
+  //Планшет
+  @media(min-width: 768px) {
+    width: 48%;
+    max-height: 480px;
+    overflow-y: auto;
+  }
+
+  //ПК
+  @media(min-width: 1280px) {
+    padding: 20px 30px;
+    max-height: unset;
+    overflow-y: unset;
+    width: unset;
+  }
+
+}
+
+.s-dashboard-totalPaid__header {
+  margin-bottom: 15px;
+  font-size: 22px;
+  font-family: 'GothamPro-Bold';
+  font-weight: bold;
+
+  //Планшет
+  @media(min-width: 768px) {
+    margin-bottom: 20px;
+  }
+
+  //ПК
+  @media(min-width: 1280px) {
+    font-size: 30px;
+  }
+
+}
+
+.s-dashboard-totalPaid__price{
+  font-family: 'Roboto-Black';
+  color: #FA305C;
+  font-size: 25px;
+  width: 100%;
+  margin-bottom: 10px;
+
+  & span {
+    color: #55657E;
+    margin-left: 10px;
+  }
+
+  & .priceMiniBlock {
+    margin-top: 5px;
+    color: #55657E;
+    font-size: 12px;
+  }
+
+  @media(min-width: 768px) {
+    margin-bottom: 15px;
+  }
+
+  //ПК
+  @media(min-width: 1280px) {
+    width: unset;
+    margin-bottom: unset;
+  }
+
+}
+
+.s-dashboard-totalPaid__select {
+  display: flex;
+  align-items: center;
+  @include select(100%);
+
+  & img {
+    margin-right: 5px;
+  }
+
+  //ПК
+  @media(min-width: 1280px) {
+    @include select(40%);
+  }
+
+}
+
+.s-dashboard-totalPaid__graphic {
+  height: 110px;
+  margin-bottom: 20px;
+
+  & img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  //ПК
+  @media(min-width: 1280px) {
+    height: 180px;
+  }
+
+}
+
+.s-dashboard-totalPaid__inMonth {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+
+  .s-dashboard-totalPaid__inMonth__preMonth {
+    display: none;
+    color: #55657E;
+    font-size: 15px;
+
+    //ПК
+    @media(min-width: 1280px) {
+      display: block;
+    }
+  }
+
+  .s-dashboard-totalPaid__inMonth__date {
+    display: none;
+    color: #FFFFFF;
+    font-size: 12px;
+
+    //ПК
+    @media(min-width: 1280px) {
+      display: block;
+    }
+
+  }
+
+  .s-dashboard-totalPaid__inMonth__periud {
+    padding: 13px 13px;
+    border-radius: 8.54545px;
+    border: 0.854545px solid #55657E;
+    cursor: pointer;
+
+    &.active {
+      background: #55657E;
+    }
+  }
+}
+
+.s-dashboard-totalPaid__rz-slider {
+  position: relative;
+  margin-bottom: 40px;
+  height: 2px;
+  background-color: rgba(243, 51, 93, 0.2);
+
+  .s-dashboard-totalPaid__rz-slider__block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: 100px;
+    background-color: rgb(27, 34, 51);
+    z-index: 1;
+    border-radius: 10px;
+
+    .s-dashboard-totalPaid__rz-slider__range-button{
+      z-index: 5;
+      &.left {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        height: 23px;
+        width: 5px;
+        background-color: #FFFFFF;
+        cursor: col-resize;
+      }
+
+      &.right {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        height: 23px;
+        width: 5px;
+        background-color: #FFFFFF;
+        cursor: col-resize;
+      }
+    }
+
+    .s-dashboard-totalPaid__rz-slider__line {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      left: 0;
+      height: 2px;
+      background-color: #FA305C;
+    }
+
+    .s-dashboard-totalPaid__rz-slider__date {
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90px;
+      color: #55657E;
+      font-size: 12px;
+    }
+  }
+
+  //Планшет
+  @media(min-width: 768px) {
+    margin-bottom: 20px;
+  }
+
+  //ПК
+  @media(min-width: 1280px) {
+    margin-bottom: 40px;
+  }
+}

@@ -1,0 +1,94 @@
+.s-dividends {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+  margin-left: 30px;
+
+  //Планшет
+  @media(min-width: 768px) {
+    margin-bottom: 70px;
+  }
+
+  //ПК
+  @media(min-width: 1280px) {
+    margin-bottom: 113px;
+  }
+}
+
+.s-dividends-emblem {
+  position: relative;
+  padding: 16px 20px 16px 30px;
+  background: #FA305C;
+  border-radius: 10px;
+  font-size: 12px;
+  margin-right: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -16px;
+    left: -37px;
+    z-index: 5;
+    height: 68px;
+    width: 66px;
+    background-image: url("../images/main-DIVIDENDS/1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  //Планшет
+  @media(min-width: 768px) {
+    font-size: 15px;
+    margin-right: 80px;
+  }
+}
+
+.s-dividends-emblem-wide {
+  position: relative;
+  padding: 16px 0;
+  padding-left: 50px;
+  padding-right: 20px;
+  background: #1B2233;
+  border-radius: 10px;
+  font-size: 12px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -20px;
+    z-index: 5;
+    height: 68px;
+    width: 75px;
+    background-image: url("../images/main-DIVIDENDS/2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    //Планшет
+    @media(min-width: 768px) {
+      top: -16px;
+      left: -37px;
+    }
+
+    //ПК
+    @media(min-width: 1280px) {
+
+    }
+  }
+
+  & span {
+    display: none;
+
+    //Планшет
+    @media(min-width: 768px) {
+      display: inline-block;
+    }
+  }
+
+  //Планшет
+  @media(min-width: 768px) {
+    font-size: 15px;
+  }
+}

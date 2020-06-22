@@ -1,0 +1,394 @@
+.s-xxxToken {
+  position: relative;
+  padding: 20px;
+  padding-top: 100px;
+  background: linear-gradient(122.89deg, rgba(34, 123, 246, 0.76) -0.62%, rgba(34, 131, 246, 0.0151356) 62.91%);
+  border-radius: 21px;
+  margin-bottom: 90px;
+
+  &::before{
+    content: 'XXX TOKEN';
+    font-family: 'GothamPro-Black';
+    position: absolute;
+    top: -110px;
+    left: 0;
+    font-size: 43px;
+    color: #161e29;
+
+    //Планшет
+    @media(min-width: 768px) {
+      font-size: 55px;
+      top: -55px;
+    }
+
+    //ПК
+    @media(min-width: 1280px) {
+      font-size: 95px;
+      top: -90px;
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%) scale(0.7);
+    height: 290px;
+    width: 365px;
+    background-image: url("../images/main-XXX-TOKEN/Group\ 1823-2.png");
+    background-repeat: no-repeat;
+
+    //Планшет
+    @media(min-width: 768px) {
+     display: none;
+    }
+
+    //ПК
+    @media(min-width: 1280px) {
+      display: block;
+      top: 50%;
+      left: -10%;
+      height: 260px;
+      width: 200px;
+      transform: translateY(-50%) scale(1.0);
+      background-image: url("../images/main-XXX-TOKEN/Group\ 1823.png");
+    }
+  }
+
+  //Планшет
+  @media(min-width: 768px) {
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-bottom: 80px;
+  }
+
+  //ПК
+  @media(min-width: 1280px) {
+    padding: 30px;
+    padding-right: 60px;
+    padding-left: 115px;
+    margin-bottom: 160px;
+  }
+}
+
+.s-xxxToken-priseChanges {
+  position: absolute;
+  top: -65px;
+  left: 0;
+
+  //Планшет
+  @media(min-width: 768px) {
+    top: -55px;
+    right: 0;
+    left: unset;
+  }
+
+  //ПК
+  @media(min-width: 1280px) {
+    top: -55px;
+  }
+}
+
+.s-xxxToken-priseChanges__price {
+  font-family: 'GothamPro-Medium';
+  font-size: 11px;
+  color: #55657E;
+  margin-bottom: 20px;
+
+  & span {
+    color: #FFFFFF;
+    margin-left: 7px;
+    font-size: 12px;
+
+    //Планшет
+    @media(min-width: 768px) {
+      margin-left: 20px;
+      font-size: 15px;
+    }
+
+    //ПК
+    @media(min-width: 1280px) {
+
+    }
+  }
+
+  @media(min-width: 768px) {
+    font-size: 15px;
+  }
+
+  //ПК
+  @media(min-width: 1280px) {
+
+  }
+}
+
+.s-xxxToken-priseChanges__line {
+  position: relative;
+  height: 6px;
+  width: 100%;
+  background: #55657E;
+  border-radius: 55px;
+}
+
+.s-xxxToken-priseChanges__greenLine{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 106px;
+  background: #2DDC4B;
+  border-radius: 55px 0px 0px 55px;
+
+  &::before {
+
+    //Планшет
+    @media(min-width: 768px) {
+      content: '';
+      position: absolute;
+      right: -5px;
+      bottom: -5px;
+      height: 16px;
+      width: 16px;
+      border-radius: 50%;
+      background: #2DDC4B;
+    }
+  }
+
+  &::after {
+
+    //Планшет
+    @media(min-width: 768px) {
+      content: '';
+      position: absolute;
+      right: -3px;
+      bottom: -3px;
+      height: 12px;
+      width: 12px;
+      border-radius: 50%;
+      background: #0D131C;
+    }
+  }
+}
+
+.s-xxxToken-priseChanges__arrowUP {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  height: 24px;
+  width: 24px;
+  background: #FA305C;
+  box-shadow: 0px 0px 11px #FA305C;
+  border-radius: 50%;
+  background-image: url("../images/main-XXX-TOKEN/up-arrow\ 1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.s-xxxToken-miningPrice__title {
+  font-family: 'GothamPro-Bold';
+  font-size: 22px;
+  margin-bottom: 25px;
+
+  //Планшет
+  @media(min-width: 768px) {
+    font-size: 25px;
+  }
+
+  //ПК
+  @media(min-width: 1280px) {
+    font-size: 30px;
+  }
+}
+
+.s-xxxToken-miningPrice-InHouseGame{
+  padding: 20px;
+  background: rgba(27, 34, 51, 0.4);
+  border-radius: 12px;
+  margin-bottom: 20px;
+  width: 100%;
+
+  //Планшет
+  @media(min-width: 768px) {
+    margin-bottom: 20px;
+  }
+
+  //ПК
+  @media(min-width: 1280px) {
+    margin-right: 50px;
+    padding: unset;
+    background: unset;
+    margin-bottom: unset;
+  }
+}
+
+.s-xxxToken-miningPrice-Slots{
+  padding: 20px;
+  background: rgba(27, 34, 51, 0.4);
+  border-radius: 12px;
+  margin-bottom: 20px;
+  width: 100%;
+
+  //Планшет
+  @media(min-width: 768px) {
+    margin-bottom: unset;
+  }
+
+  //ПК
+  @media(min-width: 1280px) {
+    padding: unset;
+    background: unset;
+    border-radius: unset;
+    margin-bottom: unset;
+  }
+}
+
+.s-xxxToken-miningPrice-InHouseGame__item {
+  margin-bottom: 15px;
+  color: #6CA8F1;
+  font-size: 15px;
+
+  & img {
+    margin-right: 10px;
+  }
+
+  & span {
+    margin-left: 10px;
+  }
+
+  &:nth-child(2) {
+    font-family: 'Roboto-Bold';
+    font-size: 25px;
+    color: #FED700;
+
+    & span {
+      color: #FFFFFF;
+    }
+  }
+
+  &:nth-child(3) {
+    font-family: 'Roboto-Bold';
+    font-size: 25px;
+    color: #FA305C;
+
+    & span {
+      color: #FFFFFF;
+    }
+  }
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+
+  &:first-child{
+    margin-bottom: 30px;
+    text-transform: uppercase;
+
+    //Планшет
+    @media(min-width: 768px) {
+      text-transform: unset;
+    }
+
+    //ПК
+    @media(min-width: 1280px) {
+
+    }
+  }
+
+  //Планшет
+  @media(min-width: 768px) {
+    margin-bottom: 30px;
+  }
+
+  //ПК
+  @media(min-width: 1280px) {
+
+  }
+}
+
+.s-xxxToken-TokenDETAILS {
+  //Планшет
+  @media(min-width: 768px) {
+    width: 45%;
+  }
+
+  //ПК
+  @media(min-width: 1280px) {
+    width: unset;
+  }
+}
+
+.s-xxxToken-TokenDETAILS__title{
+  position: relative;
+  font-size: 22px;
+  margin-bottom: 35px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: rgba(81, 132, 194, 0.32);
+  }
+
+  //Планшет
+  @media(min-width: 768px) {
+    font-size: 25px;
+  }
+
+  //ПК
+  @media(min-width: 1280px) {
+    font-size: 30px;
+  }
+
+}
+
+.s-xxxToken-TokenDETAILS__item {
+  font-family: 'Roboto-Bold';
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  font-size: 12px;
+  text-decoration: none;
+
+  & .span-1 {
+    font-family: 'GothamPro-Medium';
+    font-size: 12px;
+    color: #628DC0;
+
+    //Планшет
+    @media(min-width: 768px) {
+      font-size: 15px;
+    }
+
+    //ПК
+    @media(min-width: 1280px) {
+
+    }
+  }
+
+  & .span-2 {
+    font-family: 'GothamPro-Medium';
+    font-size: 12px;
+    color: #55657E;
+    margin-left: 10px;
+
+    //Планшет
+    @media(min-width: 768px) {
+      font-size: 15px;
+    }
+
+    //ПК
+    @media(min-width: 1280px) {
+
+    }
+
+
+  }
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+}

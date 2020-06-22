@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Document
+  body
+
+    include ./svg-sprite.pug
+
+    .container
+      include ./sections/_header.pug
+
+      .row
+        include ./sections/_left-panel.pug
+
+        main.main
+          include ./sections/_section-dividends.pug
+          include ./sections/_section-dividentsPool.pug
+          include ./sections/_section-staking.pug
+          include ./sections/_section-xxxToken.pug
+          include ./sections/_section-dashboard.pug

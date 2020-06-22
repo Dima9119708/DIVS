@@ -1,0 +1,537 @@
+.s-dividentsPool {
+  position: relative;
+  z-index: 5;
+  margin-bottom: 90px;
+
+  & .d-flex {
+    align-items: unset;
+  }
+
+  &::before {
+    content: 'Divs pool';
+    font-family: 'GothamPro-Black';
+    position: absolute;
+    top: -40px;
+    left: 0;
+    z-index: -1;
+    color: #161E29;
+    font-size: 45px;
+    text-transform: uppercase;
+
+    //Планшет
+    @media(min-width: 768px) {
+      content: 'Dividents pool';
+      top: -44px;
+      left: 0;
+      font-size: 50px;
+    }
+
+    //ПК
+    @media(min-width: 1280px) {
+      font-size: 100px;
+      top: -95px;
+      left: 0;
+    }
+  }
+
+  //Планшет
+  @media(min-width: 768px) {
+    margin-bottom: 80px;
+  }
+
+  //ПК
+  @media(min-width: 1280px) {
+    margin-bottom: 150px;
+  }
+}
+
+.s-dividentsPool-mb {
+
+  //Планшет
+  @media(min-width: 768px) {
+    margin-bottom: 30px;
+  }
+}
+
+.s-dividentsPool-block {
+  position: relative;
+  padding: 20px;
+  background: linear-gradient(216.94deg, rgba(22, 31, 44, 0) 3.48%, rgba(22, 31, 44, 0.87) 69.99%);
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: 5;
+  margin-bottom: 30px;
+  width: 100%;
+
+  &:first-child::before {
+    content: '';
+    position: absolute;
+    bottom: -180px;
+    right: 0;
+    z-index: -1;
+    height: 360px;
+    width: 170px;
+    background-image: url("../images/main-Dividents-pool/енот_главный экран-Маленькая.png");
+    background-repeat: no-repeat;
+
+    //Планшет
+    @media(min-width: 768px) {
+      margin-bottom: 0;
+      bottom: 0;
+      right: 0;
+      height: 275px;
+      width: 275px;
+      background-image: url("../images/main-Dividents-pool/енот_главный\ экран.png");
+    }
+
+    //ПК
+    @media(min-width: 1280px) {
+      bottom: -40px;
+      right: 0;
+      height: 400px;
+      width: 320px;
+    }
+  }
+
+  &:last-child::before {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    right: -80px;
+    z-index: -1;
+    height: 220px;
+    width: 220px;
+    transform: scale(0.6);
+    background-image: url("../images/main-Dividents-pool/Енот мой баланс 1.png");
+    background-repeat: no-repeat;
+
+    //Планшет
+    @media(min-width: 768px) {
+      height: 210px;
+      width: 235px;
+      bottom: -40px;
+      margin-right: 30px;
+      transform: unset;
+    }
+
+    //ПК
+    @media(min-width: 1280px) {
+      bottom: -50px;
+      height: 275px;
+      width: 260px;
+    }
+  }
+
+  &:last-child {
+
+  }
+
+  & .one {
+    display: none;
+
+    //Планшет
+    @media(min-width: 768px) {
+      display: block;
+    }
+
+    //ПК
+    @media(min-width: 1280px) {
+
+   }
+  }
+
+  //Планшет
+  @media(min-width: 768px) {
+    margin-bottom: 0;
+    width: 48%;
+  }
+
+  //ПК
+  @media(min-width: 1280px) {
+    padding: 30px;
+  }
+}
+
+.s-dividentsPool-ellipse {
+  position: absolute;
+  bottom: -150px;
+  right: -100px;
+  z-index: -1;
+  animation: slidein infinite 3s;
+
+  @keyframes slidein {
+    0%{
+      opacity: 0.2;
+    }
+    50%{
+      opacity: 0.5;
+    }
+    100%{
+      opacity: 0.2;
+    }
+  }
+
+  //Планшет
+  @media(min-width: 768px) {
+    transform: unset;
+    bottom: -120px;
+    right: -45px;
+  }
+
+  //ПК
+  @media(min-width: 1280px) {
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.s-dividentsPool-ul {
+  margin-bottom: 40px;
+}
+
+.s-dividentsPool-item{
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto-Black';
+  font-size: 18px;
+  margin-bottom: 30px;
+
+  &:first-child {
+    font-size: 20px;
+    margin-bottom: 32px;
+
+    //ПК
+    @media(min-width: 1280px) {
+      font-size: 30px;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &.s-dividentsPool-item2{
+    font-family: 'GothamPro-Bold';
+    text-transform: uppercase;
+  }
+
+  & .first-oneImg {
+    height: 45px;
+
+    //ПК
+    @media(min-width: 1280px) {
+      height: 59px;
+    }
+  }
+
+  //Планшет
+  @media(min-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+.s-dividentsPool-item__block-price {
+  margin-left: 14px;
+}
+
+.s-dividentsPool-item__first-price {
+  color: #F8A138;
+}
+
+.s-dividentsPool-item__valus {
+  color: #55657E;
+  margin-left: 10px;
+}
+
+.s-dividentsPool-item__last-price{
+  font-family: 'GothamPro-Bold';
+  font-size: 15px;
+  color: #55657E;
+  margin-top: 10px;
+
+  &.dallrai {
+    margin-top: 0;
+    font-size: 12px;
+  }
+}
+
+.s-dividentsPool-item__lastPrice {
+  color: #55657E;
+}
+
+.s-dividentsPool-item__values {
+  color: #55657E;
+  margin-left: 8px;
+}
+
+.s-dividentsPool-distribution {
+  position: relative;
+  font-size: 15px;
+  color: #55657E;
+
+  & span {
+    margin-top: 10px;
+    display: block;
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    height: 6px;
+    width: 150px;
+    background: #55657E;
+    border-radius: 55px;
+
+    //Планшет
+    @media(min-width: 768px) {
+      width: 150px;
+    }
+
+    //ПК
+    @media(min-width: 1280px) {
+      width: 262px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    height: 6px;
+    width: 75px;
+    background: #2DDC4B;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+
+    //Планшет
+    @media(min-width: 768px) {
+
+    }
+
+    //ПК
+    @media(min-width: 1280px) {
+      width: 144px;
+    }
+  }
+}
+
+.s-dividentsPool-button {
+  font-family: 'GothamPro-Bold';
+  border: 0;
+  padding: 15px 25px;
+  border-radius: 10px;
+  background: linear-gradient(250.05deg, #FA305C 2.79%, #B61739 138.13%);
+  cursor: pointer;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  outline: none;
+  transition: background 0.3s linear;
+
+  &:hover {
+    background: linear-gradient(250.05deg, rgb(248, 1, 55) 2.79%, rgb(175, 7, 44) 138.13%);
+    transition: background 0.3s linear;
+  }
+}
+
+.s-dividentsPool-Profit{
+  background: #161F2C;
+  border-radius: 20px;
+  padding: 20px;
+
+  //Планшет
+  @media(min-width: 768px) {
+    padding: 20px;
+  }
+
+  //ПК
+  @media(min-width: 1280px) {
+    padding: 30px;
+  }
+}
+
+.s-dividentsPool-Profit-mb{
+  margin-bottom: 30px;
+}
+
+.s-dividentsPool-Profit-flex{
+  display: flex;
+}
+
+.s-dividentsPool-Profit-block{
+  margin-left: 15px;
+}
+
+.s-dividentsPool-Profit__title{
+  font-family: 'GothamPro-Bold';
+  font-size: 19px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+
+  //Планшет
+  @media(min-width: 768px) {
+    font-size: 22px;
+  }
+
+  //ПК
+  @media(min-width: 1280px) {
+    font-size: 30px;
+  }
+}
+
+.s-dividentsPool-Profit__subtitle{
+  color: #55657E;
+  font-size: 12px;
+
+  //Планшет
+  @media(min-width: 768px) {
+    font-size: 10px;
+  }
+
+  //ПК
+  @media(min-width: 1280px) {
+    font-size: 15px;
+  }
+}
+
+.s-dividentsPool-Profit__select{
+  @include select(100%);
+
+  & .d-flex {
+    align-items: center;
+  }
+}
+
+.s-dividentsPool-Profit__select .d-flex img{
+  margin-right: 10px;
+}
+
+.s-dividentsPool-Profit__select .d-flex span{
+  color: #55657E;
+  margin-left: 5px;
+}
+
+.s-dividentsPool-Profit-choose {
+  margin-bottom: 38px;
+
+  //Планшет
+  @media(min-width: 768px) {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+
+  //ПК
+  @media(min-width: 1280px) {
+    margin-right: 0;
+  }
+}
+
+.s-dividentsPool-Profit-procent{
+  margin-right: 50px;
+
+  //Планшет
+  @media(min-width: 768px) {
+    margin-right: 30px;
+  }
+
+  //ПК
+  @media(min-width: 1280px) {
+    margin-right: 50px;
+  }
+}
+
+.s-dividentsPool-Profit-procent__monthDay {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #55657E;
+  margin-bottom: 10px;
+}
+
+.s-dividentsPool-Profit-procDays{
+  font-family: 'Roboto-Bold';
+  font-size: 25px;
+  color: #FED700;
+
+  //Планшет
+  @media(min-width: 768px) {
+    font-size: 30px;
+  }
+}
+
+.s-dividentsPool-Profit-table {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 25px 15px;
+  align-items: center;
+  font-size: 12px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    height: 2px;
+    width: 95%;
+    background-color: rgba(85, 101, 126, 0.18);;
+  }
+
+  & .table__title {
+    color: #55657E;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+
+    //Планшет
+    @media(min-width: 768px) {
+      font-size: 14px;
+      padding-bottom: 10px;
+    }
+
+    //ПК
+    @media(min-width: 1280px) {
+      font-size: 15px;
+      padding-bottom: 20px;
+    }
+  }
+
+  & .table__item {
+    display: flex;
+    align-items: center;
+
+    & img {
+      margin-right: 10px;
+    }
+  }
+
+  & div span {
+    color: #55657E;
+  }
+
+  & .displayNone {
+    display: none;
+
+    //Планшет
+    @media(min-width: 768px) {
+      display: block;
+    }
+  }
+
+  //Планшет
+  @media(min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 15px;
+    grid-gap: 25px 15px;
+  }
+
+  //ПК
+  @media(min-width: 1280px) {
+    grid-gap: 25px 30px;
+  }
+}

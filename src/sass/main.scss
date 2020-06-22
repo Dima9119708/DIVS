@@ -1,0 +1,16 @@
+@import './blocks/mixins';
+@import './blocks/base';
+@import './blocks/header';
+@import './blocks/left-panel';
+@import './blocks/section-dividends';
+@import './blocks/section-dividentsPool';
+@import './blocks/section-staking';
+@import './blocks/section-xxx-token';
+@import './blocks/section-dashboard-history';
+@import './blocks/section-dashboard-total';
+
+// Шрифты
+@import './fonts.scss';
+
+// normalize.css
+@import '../../node_modules/normalize.css/normalize.css'

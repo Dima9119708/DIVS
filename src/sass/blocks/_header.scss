@@ -1,0 +1,327 @@
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #161F2C;
+  padding-top: 45px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  //Планшет
+  @media(min-width: 768px) {
+    padding-top: 20px;
+  }
+
+  //ПК
+  @media(min-width: 1200px) {
+    padding: 10px 0;
+    padding-left: 260px;
+    padding-right: 35px;
+  }
+}
+
+.header-logo {
+  display: none;
+
+  //ПК
+  @media(min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 17px;
+    padding-right: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+  
+    background: linear-gradient(292.47deg, #161F2C 32.52%, #212C3D 112.94%);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.42);
+    border-bottom-right-radius: 20px;
+  
+    &::after {
+      content: '';
+      position: absolute;
+      right: -5px;
+      top: 0;
+      height: 100%;
+      width: 30px;
+      background: #161F2C;
+      transform: skew(-5deg);
+      border-bottom-right-radius: 20px;
+    }
+  }
+}
+
+.header-allGame {
+  display: none;
+
+  //ПК
+  @media(min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  
+    & .header-allGame__text {
+      margin-left: 13px;
+      color: #55657E;
+    }
+  }
+}
+
+.header-clientPart {
+  display: flex;
+}
+
+.header-clientPart__value {
+  display: none;
+
+  //Планшет
+  @media(min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  
+    & .header-clientPart__price {
+      font-family: 'Roboto-Bold';
+      font-size: 15px;
+      color: #FFFFFF;
+      margin: 0 10px;
+  
+      & span {
+        color: #55657E;
+      }
+    }
+  }
+}
+
+.header-clientPart__buttons {
+  display: none;
+
+  //Планшет
+  @media(min-width: 768px) {
+    display: block;
+ 
+    & .header-button {
+      font-family: 'GothamPro-Regular';
+      border: 0;
+      margin-right: 10px;
+      padding: 12px 14px;
+      border-radius: 10px;
+      color: #FFFFFF;
+      cursor: pointer;
+  
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  
+    & .header-clientPart__deposit {
+      background: #2281F6;
+      transition: background 0.2s linear;
+      
+      &:hover {
+        background: rgba(0, 113, 252, 0.61);
+        transition: background 0.2s linear;
+      }
+    }
+  
+    & .header-clientPart__withdraw {
+      background: #FA305C;
+  
+      &:hover {
+        background: rgb(255, 0, 55);
+  
+      }
+    }
+
+    //Планшет
+    @media(min-width: 768px) {
+      margin: 0 15px;
+    }
+
+    //ПК
+    @media(min-width: 1200px) {
+      margin: 0 35px;
+    }
+  }
+
+  //ПК
+  @media(min-width: 1200px) {
+  
+  }
+  
+}
+
+.header-clientPart__bell {
+  display: none;
+
+  //Планшет
+  @media(min-width: 768px) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    cursor: pointer;
+  
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 5px;
+      height: 6px;
+      width: 6px;
+      background: #2DDC4B;
+      border-radius: 50%;
+    }
+  }
+}
+
+.header-clientPart__client {
+  display: flex;
+  align-items: center;
+}
+
+.header-clientPart__client-img {
+  display: none;
+
+
+  //Планшет
+  @media(min-width: 768px) {
+
+  }
+
+  //ПК
+  @media(min-width: 1200px) {
+    display: block;
+    margin-right: 10px;
+  }  
+}
+
+.header-clientPart__client-block {
+  font-family: 'GothamPro-Medium';
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.header-clientPart__client-name  {
+  display: none;
+
+  //Планшет
+  @media(min-width: 768px) {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 15px;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+  }
+
+  //ПК
+  @media(min-width: 1200px) {
+
+  }
+}
+
+.header-clientPart__client-status  {
+  display: none;
+
+  //Планшет
+  @media(min-width: 768px) {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+    color: #55657E;
+  
+    & span {
+      margin-left: 5px;
+      font-family: 'Roboto-Bold';
+      font-size: 12px;
+      color: #2DDC4B;
+    }
+  }
+}
+
+.header-clientPart__avatar {
+  display: none;
+
+  //Планшет
+  @media(min-width: 768px) {
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 50px;
+    background-color: #55657E;
+  }
+}
+
+.header-clientPart__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.header-mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  //Планшет
+  @media(min-width: 768px) {
+    display: none;
+  }
+
+  & .header-mobile__bl-price {
+    font-family: 'Roboto-Bold';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background: #222D3E;
+    border-radius: 10px;
+    color: #FFFFFF;
+
+    & .header-mobile__price {
+      margin: 0 10px;
+    }
+    & .header-mobile__plus {
+      padding: 6px 12px;
+      background: #2DDC4B;
+      border-radius: 8px;
+    }
+  }
+}
+
+.header-mobile__bl {
+  display: flex;
+}
+
+.header-mobile__avatar{
+  height: 40px;
+  width: 40px;
+  background-color: #55657e;
+  margin-left: 10px;
+}
+
+.header-table-menu {
+  display: none;
+
+  //Планшет
+  @media(min-width: 768px) {
+    display: block;
+  }
+
+  //ПК
+  @media(min-width: 1200px) {
+    display: none;
+  }
+}
