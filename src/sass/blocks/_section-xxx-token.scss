@@ -97,7 +97,7 @@
   color: #55657E;
   margin-bottom: 20px;
 
-  & span {
+  & .price {
     color: #FFFFFF;
     margin-left: 7px;
     font-size: 12px;
@@ -107,20 +107,10 @@
       margin-left: 20px;
       font-size: 15px;
     }
-
-    //ПК
-    @media(min-width: 1280px) {
-
-    }
   }
 
   @media(min-width: 768px) {
     font-size: 15px;
-  }
-
-  //ПК
-  @media(min-width: 1280px) {
-
   }
 }
 
@@ -249,11 +239,11 @@
   color: #6CA8F1;
   font-size: 15px;
 
-  & img {
+  & .image {
     margin-right: 10px;
   }
 
-  & span {
+  & .value {
     margin-left: 10px;
   }
 
@@ -289,21 +279,11 @@
     @media(min-width: 768px) {
       text-transform: unset;
     }
-
-    //ПК
-    @media(min-width: 1280px) {
-
-    }
   }
 
   //Планшет
   @media(min-width: 768px) {
     margin-bottom: 30px;
-  }
-
-  //ПК
-  @media(min-width: 1280px) {
-
   }
 }
 
@@ -379,13 +359,6 @@
     @media(min-width: 768px) {
       font-size: 15px;
     }
-
-    //ПК
-    @media(min-width: 1280px) {
-
-    }
-
-
   }
 
   &:last-child{

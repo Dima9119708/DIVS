@@ -37,7 +37,7 @@
   @media(min-width: 1280px) {
     margin-bottom: 160px;
   }
-  
+
 }
 
 .s-staking-xxx-tokkens {
@@ -47,7 +47,7 @@
   font-size: 13px;
   color: #55657E;
 
-  & span {
+  & .tokken {
     color: #FFFFFF;
   }
 
@@ -190,7 +190,7 @@
       width: 40%;
     }
   }
-  
+
 }
 
 .s-staking-blockMini__title {
@@ -219,7 +219,6 @@
   @media(min-width: 1280px) {
     font-size: 30px;
   }
-
 }
 
 .s-staking-blockMini__value {
@@ -243,15 +242,15 @@
   grid-gap: 20px 30px;
   font-size: 15px;
 
-  & img {
+  .image {
     margin-right: 15px;
   }
 
-  & span {
+  .rest {
     color: #55657e;
   }
 
-  
+
   //Планшет
   @media(min-width: 768px) {
     grid-template-columns: 1fr;
@@ -281,15 +280,15 @@
   text-transform: uppercase;
   margin-bottom: 15px;
 
-  & span {
+  & .dist {
     position: relative;
     margin-left: 10px;
-    padding: 0 8px; 
+    padding: 0 8px;
     background: #55657E;
     border-radius: 50%;
-    text-transform: lowercase; 
+    text-transform: lowercase;
 
-    & img {
+    & .image {
       position: relative;
       top:50%;
       left: 0;

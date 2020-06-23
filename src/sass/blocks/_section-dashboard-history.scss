@@ -85,11 +85,11 @@
 .s-dashboard-history__select {
   @include select(100%);
 
-  & img {
+  & .image {
     margin-right: 5px;
   }
 
-  & span {
+  & .value {
     color: #36475f;
   }
 
@@ -102,7 +102,7 @@
 .s-dashboard__choose {
   margin-bottom: 20px;
 
-  & span {
+  & .choose {
     display: inline-flex;
     font-family: 'GothamPro-Bold';
     font-weight: bold;
@@ -190,8 +190,13 @@
   max-height: 0;
   transition: max-height .4s linear;
 
-  & .s-dashboard-table__item {
+  .s-dashboard-table__item {
     padding-top: 15px;
+  }
+
+  .image{
+    height: 18px;
+    margin-right: 5px;
   }
 }
 
@@ -203,7 +208,7 @@
   display: flex;
   align-items: center;
 
-  & img {
+  .image{
     height: 18px;
     margin-right: 5px;
   }

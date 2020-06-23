@@ -122,10 +122,6 @@
     }
   }
 
-  &:last-child {
-
-  }
-
   & .one {
     display: none;
 
@@ -133,11 +129,6 @@
     @media(min-width: 768px) {
       display: block;
     }
-
-    //ПК
-    @media(min-width: 1280px) {
-
-   }
   }
 
   //Планшет
@@ -269,7 +260,7 @@
   font-size: 15px;
   color: #55657E;
 
-  & span {
+  & .time {
     margin-top: 10px;
     display: block;
     color: #FFFFFF;
@@ -308,11 +299,6 @@
     background: #2DDC4B;
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
-
-    //Планшет
-    @media(min-width: 768px) {
-
-    }
 
     //ПК
     @media(min-width: 1280px) {
@@ -408,11 +394,11 @@
   }
 }
 
-.s-dividentsPool-Profit__select .d-flex img{
+.s-dividentsPool-Profit__select .d-flex .image{
   margin-right: 10px;
 }
 
-.s-dividentsPool-Profit__select .d-flex span{
+.s-dividentsPool-Profit__select .d-flex .value{
   color: #55657E;
   margin-left: 5px;
 }
@@ -467,10 +453,11 @@
 .s-dividentsPool-Profit-table {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 150px 150px 150px;
   grid-gap: 25px 15px;
   align-items: center;
   font-size: 12px;
+  overflow-x: scroll;
 
   &::before {
     content: '';
@@ -498,6 +485,7 @@
     @media(min-width: 1280px) {
       font-size: 15px;
       padding-bottom: 20px;
+      overflow-x: unset;
     }
   }
 
@@ -505,17 +493,24 @@
     display: flex;
     align-items: center;
 
-    & img {
+    & .image {
       margin-right: 10px;
+    }
+
+    .rest {
+      color: #55657E;
     }
   }
 
-  & div span {
+  & .preMonth .rest {
     color: #55657E;
   }
 
-  & .displayNone {
-    display: none;
+  & .QUARTER {
+
+    .rest {
+      color: #55657E;
+    }
 
     //Планшет
     @media(min-width: 768px) {
@@ -525,7 +520,6 @@
 
   //Планшет
   @media(min-width: 768px) {
-    grid-template-columns: 1fr 1fr 1fr;
     font-size: 15px;
     grid-gap: 25px 15px;
   }
@@ -533,5 +527,6 @@
   //ПК
   @media(min-width: 1280px) {
     grid-gap: 25px 30px;
+    overflow-x: unset;
   }
 }

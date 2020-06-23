@@ -45,7 +45,7 @@
   width: 100%;
   margin-bottom: 10px;
 
-  & span {
+  & .price {
     color: #55657E;
     margin-left: 10px;
   }
@@ -73,7 +73,7 @@
   align-items: center;
   @include select(100%);
 
-  & img {
+  & .image {
     margin-right: 5px;
   }
 
@@ -88,7 +88,7 @@
   height: 110px;
   margin-bottom: 20px;
 
-  & img {
+  & .graphic {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -128,7 +128,6 @@
     @media(min-width: 1280px) {
       display: block;
     }
-
   }
 
   .s-dashboard-totalPaid__inMonth__periud {
