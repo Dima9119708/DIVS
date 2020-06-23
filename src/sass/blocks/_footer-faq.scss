@@ -1,0 +1,101 @@
+.footer {
+  position: relative;
+  margin-bottom: 130px;
+
+  &::before {
+    position: absolute;
+    content: 'FAQ';
+    top: -70px;
+    left: 0;
+    font-family: 'GothamPro-Black';
+    font-size: 45px;
+    color: #161e29;
+
+    //ПК
+    @media(min-width: 1280px) {
+      top: -90px;
+      font-size: 100px;
+    }
+  }
+}
+
+.footer-faq__block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.footer-faq__item {
+  width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+
+  //Планшет
+  @media(min-width: 768px) {
+    width: 48%;
+  }
+
+  //ПК
+  @media(min-width: 1280px) {
+    width: 32%;
+    margin-bottom: 60px;
+    display: unset;
+  }
+}
+
+.footer-faq__item-img {
+  position: relative;
+  height: 77px;
+  width: 77px;
+
+
+  .image {
+    position: absolute;
+    top: 0;
+    left: -20px;
+    height: 100%;
+    width: 100%;
+  }
+
+  //ПК
+  @media(min-width: 1280px) {
+    height: 90px;
+    width: 90px;
+  }
+}
+
+.footer-faq__item__info {
+  width: 70%;
+
+  //ПК
+  @media(min-width: 1280px) {
+    width: 100%;
+  }
+}
+
+.footer-faq__item__title {
+  text-transform: uppercase;
+  font-family: 'GothamPro-Black';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+
+  //Планшет
+  @media(min-width: 768px) {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.footer-faq__item__text {
+  color: #55657E;
+  font-size: 12px;
+  line-height: 1.7;
+
+  //Планшет
+  @media(min-width: 768px) {
+    font-size: 15px;
+  }
+}
