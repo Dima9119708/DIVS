@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const autoprefixer = require('autoprefixer')
 
 const isProd = process.env.NODE_ENV === 'production'
 const isDev = !isProd
@@ -54,6 +55,28 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: [
+                autoprefixer({
+                  overrideBrowserslist: [
+                    '> 1%',
+                    'ie >= 8',
+                    'edge >= 15',
+                    'ie_mob >= 10',
+                    'ff >= 45',
+                    'chrome >= 45',
+                    'safari >= 7',
+                    'opera >= 23',
+                    'ios >= 7',
+                    'android >= 4',
+                    'bb >= 10']
+                })
+              ],
+              sourceMap: true
+            }
+          },
           'sass-loader',
         ],
       },
